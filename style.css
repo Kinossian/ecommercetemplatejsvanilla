@@ -163,24 +163,23 @@ header {
     gap: 1.5rem;
 }
 .product-box {
-    padding: 2px;
     position: relative;
-    border: 1px solid rgba(255, 255, 255, 0);
+    padding: 2px;
+    border: 1px solid rgba(0, 0, 0, var(--product-box-border-opacity, 0));
 }
 .product-box:hover {
-    border: 1px solid var(--text-color);
-    transition: 0.4s;
+    --product-box-border-opacity: 1;
+}
+.product-box:hover .product-img {
+    padding: 10px;
 }
 .product-img {
+    transition: 0.4s;
     width: 100%;
     height: auto;
     margin-bottom: 0.5rem;
 }
-.product-img:hover {
-    padding: 10px;
-    /* border: 1px solid var(--text-color); */
-    transition: 0.4s;
-}
+
 .product-title {
     font-size: 1.1rem;
     font-weight: 600;
