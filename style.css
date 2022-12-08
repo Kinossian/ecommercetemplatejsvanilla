@@ -163,10 +163,11 @@ header {
     gap: 1.5rem;
 }
 .product-box {
+    padding: 2px;
     position: relative;
+    border: 1px solid rgba(255, 255, 255, 0);
 }
 .product-box:hover {
-    padding: 10px;
     border: 1px solid var(--text-color);
     transition: 0.4s;
 }
@@ -174,6 +175,11 @@ header {
     width: 100%;
     height: auto;
     margin-bottom: 0.5rem;
+}
+.product-img:hover {
+    padding: 10px;
+    /* border: 1px solid var(--text-color); */
+    transition: 0.4s;
 }
 .product-title {
     font-size: 1.1rem;
